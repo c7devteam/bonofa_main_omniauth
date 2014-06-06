@@ -8,10 +8,10 @@ end
 class ConfigurationTest < StrategyTestCase
   test "should set the configuration vars from site url" do
     Omniauth::Bonofa.configure do |config|
-      config.site = "http://www.opportunity-2014.com"
+      config.site = "http://www.bonofa-test.com"
     end
-    assert_equal Omniauth::Bonofa.configuration.site, "http://www.opportunity-2014.com"
-    assert_equal 'http://www.opportunity-2014.com', strategy.client.site
+    assert_equal Omniauth::Bonofa.configuration.site, "http://www.bonofa-test.com"
+    assert_equal 'http://www.bonofa-test.com', strategy.client.site
   end
 
   test "should set configuration vars" do
