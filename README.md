@@ -56,7 +56,7 @@ An example auth hash available in `request.env['omniauth.auth']`:
 
 ```ruby
 {
-  "provider"=>:bonofa_shop,
+  "provider"=>:bonofa,
   "uid"=>1,
   "info"=>
   {
