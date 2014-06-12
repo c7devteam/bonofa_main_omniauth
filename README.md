@@ -37,17 +37,6 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
-or
-
-```ruby
-Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :bonofa, "APPLICATION_ID", "SECRET_KEY", {
-    site: 'http://www.opportunity-2014.com',
-    authorize_url: '/oauth/authorize',
-  }
-end
-```
-
 Replace APPLICATION_ID and SECRET_KEY with the appropriate values you obtained from administrator earlier.
 
 ## Authentication Hash
