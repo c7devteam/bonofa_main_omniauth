@@ -89,6 +89,7 @@ An example auth hash available in `request.env['omniauth.auth']`:
       "state"             => "",
       "city"              => "",
       "zip"               => "",
+      "country"           => "",
       "phone"             => "",
       "fax"               => "",
       "company"           => "Bonofa",
