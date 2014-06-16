@@ -37,6 +37,17 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
+or
+
+```ruby
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :bonofa, "APPLICATION_ID", "SECRET_KEY", {
+    site: 'http://www.opportunity-2014.com',
+    authorize_url: '/oauth/authorize',
+  }
+end
+```
+
 Replace APPLICATION_ID and SECRET_KEY with the appropriate values you obtained from administrator earlier.
 
 ## Authentication Hash
@@ -45,13 +56,14 @@ An example auth hash available in `request.env['omniauth.auth']`:
 
 ```ruby
 {
-  "provider"=>:bonofa,
+  "provider"=>:bonofa_shop,
   "uid"=>1,
   "info"=>
   {
     "email"             => "info@bonofa.com",
     "first_name"        => "Alexander",
     "last_name"         => "Bierbrauer",
+    "bithday"           => "1980-01-01",
     "promotion_code"    => "bonofa",
     "profile_image_url" => "http://www.opportunity-2014.com/assets/profile_image_thumb.png",
     "language"          => "en",
@@ -69,9 +81,18 @@ An example auth hash available in `request.env['omniauth.auth']`:
       "email"             => "info@bonofa.com",
       "first_name"        => "Alexander",
       "second_name"       => "Bierbrauer",
+      "bithday"           => "1980-01-01",
       "promotion_code"    => "bonofa",
       "profile_image_url" => "http://www.opportunity-2014.com/assets/profile_image_thumb.png",
-      "language"          => "en",
+      "shop_language"     => "en",
+      "address"           => "",
+      "state"             => "",
+      "city"              => "",
+      "zip"               => "",
+      "phone"             => "",
+      "fax"               => "",
+      "company"           => "Bonofa",
+      "title"             => "Dev Header",
     }
   }
 }

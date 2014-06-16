@@ -13,6 +13,7 @@ module OmniAuth
           :email              => raw_info["email"],
           :first_name         => raw_info["first_name"],
           :last_name          => raw_info["last_name"],
+          :birthday           => raw_info["birthday"],
           :language           => raw_info["shop_language"],
           :promotion_code     => raw_info["promotion_code"],
           :profile_image_url  => raw_info["profile_image_url"],
