@@ -17,7 +17,7 @@ module Omniauth
       include Singleton
 
       def site
-        @site || "http://www.opportunity-2014.com"
+        @site || "http://shop.opportunity-2014.com"
       end
 
       def authorize_url

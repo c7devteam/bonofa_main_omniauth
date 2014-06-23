@@ -9,7 +9,7 @@ end
 
 class ClientTest < StrategyTestCase
   test 'has correct Bonofa site' do
-    assert_equal 'http://www.opportunity-2014.com', strategy.client.site
+    assert_equal 'http://shop.opportunity-2014.com', strategy.client.site
   end
 
   test 'has correct authorize url' do
