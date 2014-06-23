@@ -16,6 +16,7 @@ module OmniAuth
           :birthday           => raw_info["birthday"],
           :language           => raw_info["shop_language"],
           :promotion_code     => raw_info["promotion_code"],
+          :baio_package       => raw_info["baio_package"],
           :profile_image_url  => raw_info["profile_image_url"],
         }
       end

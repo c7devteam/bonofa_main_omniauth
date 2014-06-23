@@ -63,10 +63,11 @@ An example auth hash available in `request.env['omniauth.auth']`:
     "email"             => "info@bonofa.com",
     "first_name"        => "Alexander",
     "last_name"         => "Bierbrauer",
-    "bithday"           => "1980-01-01",
+    "birthday"           => "1980-01-01",
     "promotion_code"    => "bonofa",
     "profile_image_url" => "http://www.opportunity-2014.com/assets/profile_image_thumb.png",
     "language"          => "en",
+    "baio_package"      => "vip_package",
   },
   "credentials"=>
   {
@@ -81,7 +82,7 @@ An example auth hash available in `request.env['omniauth.auth']`:
       "email"             => "info@bonofa.com",
       "first_name"        => "Alexander",
       "second_name"       => "Bierbrauer",
-      "bithday"           => "1980-01-01",
+      "birthday"           => "1980-01-01",
       "promotion_code"    => "bonofa",
       "profile_image_url" => "http://www.opportunity-2014.com/assets/profile_image_thumb.png",
       "shop_language"     => "en",
@@ -95,6 +96,7 @@ An example auth hash available in `request.env['omniauth.auth']`:
       "fax"               => "",
       "company"           => "Bonofa",
       "title"             => "Dev Header",
+      "baio_package"      => "vip_package",
     }
   }
 }
