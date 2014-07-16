@@ -1,10 +1,14 @@
-require "omniauth/bonofa/configuration"
 require 'omniauth/strategies/oauth2'
 
 module OmniAuth
   module Strategies
     class Bonofa < OmniAuth::Strategies::OAuth2
       option :name, :bonofa
+
+      option :client_options, {
+        :site           => "https://shop.bonofa.com",
+        :authorize_url  => "/oauth/authorize"
+      }
 
       uid { raw_info["id"] }
 
@@ -23,10 +27,6 @@ module OmniAuth
 
       extra do
         { :raw_info => raw_info }
-      end
-
-      def client
-        ::OAuth2::Client.new(options.client_id, options.client_secret, deep_symbolize(Omniauth::Bonofa.configuration.client_options))
       end
 
       def raw_info

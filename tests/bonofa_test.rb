@@ -8,8 +8,8 @@ class StrategyTest < StrategyTestCase
 end
 
 class ClientTest < StrategyTestCase
-  test 'has correct Bonofa site' do
-    assert_equal 'http://shop.opportunity-2014.com', strategy.client.site
+  test 'has correct baio site' do
+    assert_equal 'https://shop.bonofa.com', strategy.client.site
   end
 
   test 'has correct authorize url' do
