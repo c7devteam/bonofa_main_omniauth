@@ -1,6 +1,6 @@
 # Omniauth Bonofa
 
-[Bonofa Shop](http://www.opportunity-2014.com) is an international Sales-Platform with all the functions and aspects of a social network.
+[Bonofa Shop](https://baio.bonofa.com) is an international Sales-Platform with all the functions and aspects of a social network.
  
 This gem contains the Bonofa strategy for OmniAuth.
 
@@ -41,7 +41,7 @@ or
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :bonofa, "APPLICATION_ID", "SECRET_KEY", {
+  provider :bonofa, "APPLICATION_ID", "SECRET_KEY", client_options: {
     site: 'http://www.opportunity-2014.com',
     authorize_url: '/oauth/authorize',
   }
