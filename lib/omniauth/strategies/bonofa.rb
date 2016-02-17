@@ -23,7 +23,7 @@ module OmniAuth
           :baio_package       => raw_info["baio_package"],
           :profile_image_url  => raw_info["profile_image_url"],
           :tree_spot_id  => raw_info["tree_spot_id"],
-          :manager_rank  => raw_info["manager_rank"],
+          :manager_rank  => raw_info["baio_manager_rank"],
         }
       end
 
