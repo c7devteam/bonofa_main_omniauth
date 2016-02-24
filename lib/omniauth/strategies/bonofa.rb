@@ -24,6 +24,13 @@ module OmniAuth
           :profile_image_url  => raw_info["profile_image_url"],
           :tree_spot_id  => raw_info["tree_spot_id"],
           :manager_rank  => raw_info["baio_manager_rank"],
+          :addressline_1  => raw_info["address"],
+          :addressline_2  => raw_info["address_2"],
+          :state  => raw_info["state"],
+          :city  => raw_info["city"],
+          :zip  => raw_info["zip"],
+          :country  => raw_info["country"],
+          :company  => raw_info["company"],
         }
       end
 
