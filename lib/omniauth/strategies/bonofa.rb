@@ -28,7 +28,7 @@ module OmniAuth
           :addressline_2  => raw_info["address_2"],
           :state  => raw_info["state"],
           :city  => raw_info["city"],
-          :zip  => raw_info["zip"],
+          :zip_code  => raw_info["zip"],
           :country  => raw_info["country"],
           :company  => raw_info["company"],
         }
